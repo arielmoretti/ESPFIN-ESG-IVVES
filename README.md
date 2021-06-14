@@ -33,10 +33,12 @@ The RL-based test generation and prioritization is based in a time window-based 
 
 As an outcome, the most effective Metamorphic Relations will be selected to generate the optimal test cases to execute, taking also into account performance.
 
-## Claimed novelty
-The novelty relies in the dynamic metamorphic testing for NLP-based ESG evolving systems based on templates and Knowledge Graphs combined with approaches for test prioritization based on performance.
-
 ## System Diagram
+
+
+![Figure 4](/images/ESP-FIN-WP3 - Diagrama de implementación UML de nivel superior.png)
+
+**_Figure 4_:** ESP-FIN System Diagram.
 
 ### WP2 Information Crawler
 
