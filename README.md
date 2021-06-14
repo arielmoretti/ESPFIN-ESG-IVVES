@@ -1,13 +1,13 @@
 # Test generation and prioritization for ESG-investment    
 The irruption of game-changing innovations and open-source technologies in NLP is changing the way that companies work with text. Unstructured text is being used as input data for many industrial domains (i.e., predicting market trends based on sentiment analysis). Data Analytics companies are curating and collating text information from diverse sources to feed AI models (Figure 1) and provide trends and insights. Its combination with other AI techniques applied to numerical data is fostering the integration of NLP into regular Data Analysis.
 
-![](file:///C:/Users/jls/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif)
+![Figure 1](/images/image1.png)
 
 **_Figure 1_** General workflow for NLP-based models to provide trends and insights in finance sector
 
 ESG (Environmental, Social and Governance) investing refers to a class of investing that is also known as “sustainable investing.” This is an umbrella term for investments that seek positive returns and long-term impact on society, environment and the performance of the business. To assess a company (an asset) based on environmental, social, and governance (ESG) criteria, investors look at a broad range of behaviours to set the ESG score for a given asset.
 
-![](file:///C:/Users/jls/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif)
+![Figure 2](/images/image2.png)
 
 **_Figure 2_:** Estimates of assets under management with an ESG mandate. Source: Deutsche Bank.
 
@@ -25,7 +25,7 @@ There are different approaches for test case Reinforcement Learning-based test c
 ## Anticipated Contribution
 The main technical contribution is supporting testing based on Reinforcement Learning for NLP-based ESG evolving systems. Specifically, given an ESG-investment-focused ES and a set of rules defined by an expert for scoring securities with respect to ESG criteria, develop masked language models.
 
-![](file:///C:/Users/jls/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif)
+![Figure 3](/images/image3.png)
 
 **_Figure 3_:** Templating with masked language models. \[1\]
 
