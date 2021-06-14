@@ -36,7 +36,7 @@ As an outcome, the most effective Metamorphic Relations will be selected to gene
 ## System Diagram
 
 
-![Figure 4](/images/ESP-FIN-WP3 - Diagrama de implementación UML de nivel superior.png)
+![Figure 4](/images/ESP-FIN-WP3-systemDiagram.png)
 
 **_Figure 4_:** ESP-FIN System Diagram.
 
