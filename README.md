@@ -40,19 +40,35 @@ The novelty relies in the dynamic metamorphic testing for NLP-based ESG evolving
 
 ### WP2 Information Crawler
 
+#### current status:
+
 ### WP2 Ground-Truth Manager
+
+#### current status:
 
 ### Data Manager
 
+#### current status:
+
 ### Test Case Manager
+
+#### current status:
 
 ### ESP-FIN Model Validator
 
+#### current status:
+
 ### ESP-FIN Model Repository
+
+#### current status:
 
 ### ESP-FIN Orchestrator
 
+#### current status:
+
 ### ESP-FIN Server
+
+#### current status:
 
 
 
