@@ -1,4 +1,4 @@
-# Test generation and prioritization for ESG-investment    
+# WP3: Test generation and prioritization for ESG-investment    
 The irruption of game-changing innovations and open-source technologies in NLP is changing the way that companies work with text. Unstructured text is being used as input data for many industrial domains (i.e., predicting market trends based on sentiment analysis). Data Analytics companies are curating and collating text information from diverse sources to feed AI models (Figure 1) and provide trends and insights. Its combination with other AI techniques applied to numerical data is fostering the integration of NLP into regular Data Analysis.
 
 ![Figure 1](/images/image1.png)
@@ -45,39 +45,53 @@ This component is in charge of automatically crawling information related to ESG
 
 #### current status:
 
+The information crawler component work in two different phases. In the first phase the crawler search for news urls. For this phase two components have been developed, 
+
+1. News searcher. It Fetches urls using a search term and a time span. It returns basic information such, news title, source, url and publish date.
+
+2. GDelt crawler. (https://www.gdeltproject.org/) The second component downloads the gdelt event database in a daily basis and return the same basic information.
+
+The second phase consists in augmenting the basic information. It uses the url provided and crawls the page looking for additional information such article author, title, and full text. Then a NLP pipeline augments the information again providing, summary and keywords.
+
+A first version of the services has been implemented. 
+
 ### WP2 Ground-Truth Manager
 This component is in charge of ingesting information related to other sources (i.e. ESG Data from Reuters) and  provides a HIL interface to confirm (and/or enhance data labelling). The information will be stored in the Data Manager. 
 
 #### current status:
+Several components have been developed. 
+
+1. Frontend Component: It provides an user interface to retrieve news from the information crawler services and persistsit as nodes in a graph database, communicating with te Data Manager. Then it provides the neccesary tools to annotate the data.
+
+2. Backend Component: It handles all the communication betweenthe user interface, the information crawler and the graph database.
+
+A first version of the services is ready to be used and right know a team is using it to annotate the ground truth data. It is planned to add new services with new use cases to improve the information provided. 
 
 ### Data Manager
 This component  manageS all the data repositories including the Graph Database Server. 
-
 #### current status:
-
+The current version of de DM is already handling all the articles crawled by the information crawler component and annotations from the ground truth manager.
 ### WP2 Test Case Manager
 This component generate test cases to monitor and validate the performance of the models. 
 #### current status:
-
+The development is in early stage. Right know we are experimenting with different text generation pipelines with autoregressive models and getting the first results.
 ### ESP-FIN Model Validator
 This component monitors the models, generating the most efficient test case for every model. 
-
 #### current status:
+This component development is in early stage. Its architecture already have been described and the barebone components have been developed and are ready to handle the first models to be tested. It is highly depending on the Test Case Manager. 
 
 ### ESP-FIN Model Repository
 This component manages the different models being generating and updated. The model will be validated and monitored by the "ESP-FIN Model Validator". Once a version of a model fulfills the KPIs defined, it is set as ready for deployment in the ESP-FIN Server. 
-
 #### current status:
-
+A first version has been generated.
 ### ESP-FIN Orchestrator
 This component is in charge of managing the CI/CD pipeline and coordinate the communication between the rest of components. 
-
 #### current status:
-
+A first version of the component has been released, but in an early stage of development.
 ### ESP-FIN Server
 This component is in charge of hosting the models that will get requests from the front-end.
-
 #### current status:
+This component is ready to serve the firsts models whenever they are ready.
 
 
 
