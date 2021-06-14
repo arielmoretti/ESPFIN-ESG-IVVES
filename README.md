@@ -36,7 +36,37 @@ As an outcome, the most effective Metamorphic Relations will be selected to gene
 ## Claimed novelty
 The novelty relies in the dynamic metamorphic testing for NLP-based ESG evolving systems based on templates and Knowledge Graphs combined with approaches for test prioritization based on performance.
 
+## System Diagram
+
+### WP2 Information Crawler
+
+### WP2 Ground-Truth Manager
+
+### Data Manager
+
+### Test Case Manager
+
+### ESP-FIN Model Validator
+
+### ESP-FIN Model Repository
+
+### ESP-FIN Orchestrator
+
+### ESP-FIN Server
+
+
+
+
+
+
+
+
+
+
+
 ## References   
 \[1\] [M. Tulio Ribeiro](https://arxiv.org/search/cs?searchtype=author&query=Ribeiro%2C+M+T), [T. Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+T), [C. Guestrin](https://arxiv.org/search/cs?searchtype=author&query=Guestrin%2C+C), [S. Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+S), “Beyond Accuracy: Behavioral Testing of NLP Models with CheckList”. arXiv preprint arXiv:2005.04118, 2020.
 
 \[2\] WU, Zhaolin, et al., “A Time Window based Reinforcement Learning Reward for Test Case Prioritization in Continuous Integration”, In Proceedings of the 11th Asia-Pacific Symposium on Internetware, p. 1-6, 2019.
+
+
