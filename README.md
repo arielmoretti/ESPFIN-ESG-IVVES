@@ -41,34 +41,41 @@ As an outcome, the most effective Metamorphic Relations will be selected to gene
 **_Figure 4_:** ESP-FIN System Diagram.
 
 ### WP2 Information Crawler
+This component is in charge of automatically crawling information related to ESG. The crawler will get information from online sources. The information will be stored in the Data Manager.  
 
 #### current status:
 
 ### WP2 Ground-Truth Manager
+This component is in charge of ingesting information related to other sources (i.e. ESG Data from Reuters) and  provides a HIL interface to confirm (and/or enhance data labelling). The information will be stored in the Data Manager. 
 
 #### current status:
 
 ### Data Manager
+This component  manageS all the data repositories including the Graph Database Server. 
 
 #### current status:
 
-### Test Case Manager
-
+### WP2 Test Case Manager
+This component generate test cases to monitor and validate the performance of the models. 
 #### current status:
 
 ### ESP-FIN Model Validator
+This component monitors the models, generating the most efficient test case for every model. 
 
 #### current status:
 
 ### ESP-FIN Model Repository
+This component manages the different models being generating and updated. The model will be validated and monitored by the "ESP-FIN Model Validator". Once a version of a model fulfills the KPIs defined, it is set as ready for deployment in the ESP-FIN Server. 
 
 #### current status:
 
 ### ESP-FIN Orchestrator
+This component is in charge of managing the CI/CD pipeline and coordinate the communication between the rest of components. 
 
 #### current status:
 
 ### ESP-FIN Server
+This component is in charge of hosting the models that will get requests from the front-end.
 
 #### current status:
 
