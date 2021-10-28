@@ -67,28 +67,28 @@ Several components have been developed.
 
 A first version of the services is ready to be used and right know a team is using it to annotate the ground truth data. It is planned to add new services with new use cases to improve the information provided. 
 
-### Data Manager
-This component  manageS all the data repositories including the Graph Database Server. 
+### WP2 Data Manager
+This component  manages all the data repositories including the Graph Database Server. 
 #### current status:
 The current version of de DM is already handling all the articles crawled by the information crawler component and annotations from the ground truth manager.
 ### WP2 Test Case Manager
 This component generate test cases to monitor and validate the performance of the models. 
 #### current status:
 The development is in early stage. Right know we are experimenting with different text generation pipelines with autoregressive models and getting the first results.
-### ESP-FIN Model Validator
+### WP3 ESP-FIN Model Validator
 This component monitors the models, generating the most efficient test case for every model. 
 #### current status:
 This component development is in early stage. Its architecture already have been described and the barebone components have been developed and are ready to handle the first models to be tested. It is highly depending on the Test Case Manager. 
 
-### ESP-FIN Model Repository
+### WP5 ESP-FIN Model Repository
 This component manages the different models being generating and updated. The model will be validated and monitored by the "ESP-FIN Model Validator". Once a version of a model fulfills the KPIs defined, it is set as ready for deployment in the ESP-FIN Server. 
 #### current status:
 A first version has been generated.
-### ESP-FIN Orchestrator
+### WP5 ESP-FIN Orchestrator
 This component is in charge of managing the CI/CD pipeline and coordinate the communication between the rest of components. 
 #### current status:
 A first version of the component has been released, but in an early stage of development.
-### ESP-FIN Server
+### WP5 ESP-FIN Server
 This component is in charge of hosting the models that will get requests from the front-end.
 #### current status:
 This component is ready to serve the firsts models whenever they are ready.
